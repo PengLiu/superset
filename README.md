@@ -177,3 +177,16 @@ how to set up a development environment.
   * [Building Custom Viz Plugins](https://superset.apache.org/docs/installation/building-custom-viz-plugins)
   * [Managing and Deploying Custom Viz Plugins](https://medium.com/nmc-techblog/apache-superset-manage-custom-viz-plugins-in-production-9fde1a708e55)
 * [Superset API](https://superset.apache.org/docs/rest-api)
+
+
+## Configuration
+
+* User MySql Database
+  * 修改 config.py 修改mysql数据库连接
+  * superset db upgrade
+  * superset init
+  * flask fab create-admin 初始化admin账号
+
+## 启动Debug环境
+
+* FLASK_ENV=development superset run -p 8088 --with-threads --reload --debugger
